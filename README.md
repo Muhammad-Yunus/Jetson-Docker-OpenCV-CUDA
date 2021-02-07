@@ -18,7 +18,7 @@ sudo nano /etc/docker/daemon.json
 - Restart Docker Service,
 ```
 sudo systemctl restart docker
-```<br><br>
+``` \\
 - Clone repo :
 ```
 cd ~
