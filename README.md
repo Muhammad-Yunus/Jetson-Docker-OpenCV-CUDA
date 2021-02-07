@@ -36,8 +36,7 @@ docker build --pull --rm -f "Github/Jetson-Nano-Docker-OpenCV-CUDA/Dockerfile" -
 ```
 sudo docker run --rm --net=host --runtime nvidia  jetson-opencv-cuda:latest
 ```
-<br>
-<br>
+<br><br>
 - **Or**, Pull image from Docker Hub :
 ```
 docker pull yunusdev/jetson-opencv-cuda
