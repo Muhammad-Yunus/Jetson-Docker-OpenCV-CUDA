@@ -38,5 +38,5 @@ docker pull yunusdev/jetson-opencv-cuda
 ```
 - Run Image using NVIDIA Container Runtime,
 ```
-sudo docker run --rm --net=host --runtime nvidia  jetson-opencv-cuda:latest
+sudo docker run --rm --net=host --runtime nvidia  yunusdev/jetson-opencv-cuda:latest
 ```
