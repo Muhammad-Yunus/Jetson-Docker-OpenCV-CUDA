@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 2019 Michael de Gans
+# 2019 Michael de Gans (https://github.com/mdegans/nano_build_opencv)
 
 set -e
 
