@@ -1,4 +1,24 @@
 # Jetson Nano Docker OpenCV CUDA
+- Set `nvidia` as default Docker runtime,
+```
+sudo nano /etc/docker/daemon.json
+```
+- Change `daemon.json` to look like this,
+```
+{
+    "runtimes": {
+        "nvidia": {
+            "path": "/usr/bin/nvidia-container-runtime",
+            "runtimeArgs": []
+         } 
+    },
+    "default-runtime": "nvidia" 
+}
+```
+- Restart Docker Service,
+```
+sudo systemctl restart docker
+```<br><br>
 - Clone repo :
 ```
 cd ~
