@@ -6,10 +6,14 @@ if [ -e /etc/nv_tegra_release ]; then
     if [ ! -z "$L4T_VERSION_STRING" ]; then 
         L4T_RELEASE=$(echo $L4T_VERSION_STRING | cut -f 2 -d ' ' | grep -Po '(?<=R)[^;]+')
         L4T_REVISION=$(echo $L4T_VERSION_STRING | cut -f 2 -d ',' | grep -Po '(?<=REVISION: )[^;]+')
-	L4T_REVISION_MAJOR=${L4T_REVISION:0:1}
-	L4T_REVISION_MINOR=${L4T_REVISION:2:1}
-	L4T_VERSION="$L4T_RELEASE.$L4T_REVISION"
-	echo "Using L4T version ${L4T_VERSION} based on /etc/nv_tegra_release"
+        L4T_REVISION_MAJOR=${L4T_REVISION:0:1}
+        L4T_REVISION_MINOR=${L4T_REVISION:2:1}
+        L4T_VERSION="$L4T_RELEASE.$L4T_REVISION"
+        if [ "${L4T_VERSION}" = "32.7.2" ]; then
+            L4T_VERSION="32.7.1"
+            echo "Substituting L4T version ${L4T_VERSION} since the tag for 32.7.2 doesn't exist"
+        fi
+        echo "Using L4T version ${L4T_VERSION} based on /etc/nv_tegra_release"
     fi
 fi
 pushd $(dirname $0)/..
