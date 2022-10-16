@@ -30,7 +30,7 @@ cd ~
 ```
 - Build image,
 ```
-docker build --pull --rm -f "Github/Jetson-Nano-Docker-OpenCV-CUDA/Dockerfile" -t jetson-opencv-cuda:latest "Github/Jetson-Nano-Docker-OpenCV-CUDA/"
+docker build --pull --rm -f "Github/Jetson-Docker-OpenCV-CUDA/Dockerfile" -t jetson-opencv-cuda:latest "Github/Jetson-Docker-OpenCV-CUDA/"
 ```
 - Run Image using NVIDIA Container Runtime,
 ```
