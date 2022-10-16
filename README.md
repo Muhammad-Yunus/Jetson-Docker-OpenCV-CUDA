@@ -30,11 +30,10 @@ cd ~
 mkdir -p Github
 cd Github
 git clone https://github.com/Muhammad-Yunus/Jetson-Docker-OpenCV-CUDA.git
-cd ~
 ```
 - Build image,
 ```
-cd Github/Jetson-Docker-OpenCV-CUDA/docker
+cd Jetson-Docker-OpenCV-CUDA/docker
 sudo chmod +x build.sh
 ./build.sh
 ```
