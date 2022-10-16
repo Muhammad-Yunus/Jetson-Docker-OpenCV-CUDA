@@ -25,7 +25,7 @@ sudo systemctl restart docker
 cd ~
 mkdir -p Github
 cd Github
-git clone https://github.com/Muhammad-Yunus/Jetson-Nano-Docker-OpenCV-CUDA.git
+git clone https://github.com/Muhammad-Yunus/Jetson-Docker-OpenCV-CUDA.git
 cd ~
 ```
 - Build image,
