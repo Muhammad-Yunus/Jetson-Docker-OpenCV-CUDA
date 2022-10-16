@@ -1,5 +1,6 @@
 # build step
-FROM nvcr.io/nvidia/l4t-base:r32.4.3
+ARG L4T_VERSION=32.4.3
+FROM nvcr.io/nvidia/l4t-base:r${L4T_VERSION}
 
 ARG DEBIAN_FRONTEND=noninteractive 
 
