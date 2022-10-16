@@ -1,4 +1,8 @@
-# Jetson Nano Docker OpenCV CUDA
+# Jetson Docker OpenCV CUDA
+---
+- Added support Jetpact 4.6
+- Build tested on *Jetson Nano* & *Jetson Xavier*
+---
 - Set `nvidia` as default Docker runtime,
 ```
 sudo nano /etc/docker/daemon.json
