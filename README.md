@@ -50,3 +50,17 @@ docker pull yunusdev/jetson-opencv-cuda
 ```
 sudo docker run --rm --net=host --runtime nvidia  yunusdev/jetson-opencv-cuda:latest
 ```
+
+## Building on a different base container
+
+By default, the build script builds on top of a container matching the version of
+Jetpack running on the host.  To build with a specific base image instead, use:
+
+```
+./docker/build.sh --image <your base image>
+```
+
+For example, to build on the tensorflow-l4t container use a command like:
+```
+./docker/build.sh --image nvcr.io/nvidia/l4t-tensorflow:r32.7.1-tf2.7-py3
+```

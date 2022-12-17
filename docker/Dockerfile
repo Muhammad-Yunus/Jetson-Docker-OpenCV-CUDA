@@ -1,6 +1,8 @@
 # build step
 ARG L4T_VERSION=32.4.3
-FROM nvcr.io/nvidia/l4t-base:r${L4T_VERSION}
+ARG CONTAINER=nvcr.io/nvidia/l4t-base
+ARG BASE_IMAGE_REF=${CONTAINER}:r${L4T_VERSION}
+FROM ${BASE_IMAGE_REF}
 
 ARG DEBIAN_FRONTEND=noninteractive 
 
